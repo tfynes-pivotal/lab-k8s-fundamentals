@@ -7,7 +7,7 @@ spec:
     ingress:
       hostname: lab-k8s-fundamentals
     registration:
-      type: anonymouns
+      type: anonymous
     reserved: 0
     sessions:
       maximum: 5
