@@ -12,6 +12,6 @@ spec:
         layout: split
       console:
         enabled: true
-    namepaces:
+    namespaces:
       budget: small
     
