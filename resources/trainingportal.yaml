@@ -1,20 +1,19 @@
-apiVersion: training.educates.dev/v1beta1
+apiVersion: learningcenter.tanzu.vmware.com/v1beta1
 kind: TrainingPortal
 metadata:
   name: lab-k8s-fundamentals
 spec:
   portal:
+    ingress:
+      hostname: lab-k8s-fundamentals
     registration:
-      type: anonymous
+      type: anonymouns
+    reserved: 0
+    sessions:
+      maximum: 5
     updates:
       workshop: true
-    sessions:
-      maximum: 1
-    workshop:
-      defaults:
-        reserved: 1
-        initial: 0
   workshops:
   - name: lab-k8s-fundamentals
-    expires: 60m
+    expires: 30m
     orphaned: 5m
