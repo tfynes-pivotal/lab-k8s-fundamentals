@@ -5,6 +5,7 @@ metadata:
 spec:
   title: Kubernetes Fundamentals
   description: An interactive workshop on Kubernetes fundamentals.
+  url: https://github.com/tfynes-pivotal/lab-k8s-fundamentals
   session:
     applications:
       terminal:
