@@ -1,30 +1,17 @@
-apiVersion: training.educates.dev/v1beta1
+apiVersion: learningcenter.tanzu.vmware.com/v1beta1
 kind: Workshop
 metadata:
   name: lab-k8s-fundamentals
 spec:
   title: Kubernetes Fundamentals
   description: An interactive workshop on Kubernetes fundamentals.
-  workshop:
-    files:
-    - image:
-        url: $(image_repository)/lab-k8s-fundamentals-files:latest
-      includePaths:
-      - /workshop/**
-      - /templates/**
-      - /README.md
   session:
-    namespaces:
-      budget: medium
-      security:
-        policy: restricted
     applications:
       terminal:
         enabled: true
         layout: split
       console:
         enabled: true
-      slides:
-        enabled: true
-        reveal.js:
-          version: 3.x
+    namepaces:
+      budget: small
+    
